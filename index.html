@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://css.gg/search.css' rel='stylesheet'>
+    <link href='https://css.gg/chevron-up.css' rel='stylesheet'>
+    <link href='https://css.gg/chevron-down.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Bootrap Theme Example</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <button class="button--navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar__logo"><a href="#">Logo</a></div>
+            <ul class="navbar__links navbar__links--small">
+                <li class="navbar__link navbar__link--active"><a href="#">Home</a></li>
+                <li class="navbar__link"><a href="#band">Band</a></li>
+                <li class="navbar__link"><a href="#tour">Tour</a></li>
+                <li class="navbar__link"><a href="#contact">Contact</a></li>
+                <li class="navbar__link dropdown">
+                    <a id="navbar__more">
+                        More <span class="carpet"><i class="gg-chevron-down"></i></span>
+                    </a>
+                    <ul class="dropdown__menu">
+                        <li><a>Merchandise</a></li>
+                        <li><a>Extras</a></li>
+                        <li><a>Media</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__link navbar__link--icon"><a href=""><i class="gg-search"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="carousel">
+        <img src="./img/chicago.jpg" alt="" srcset="">
+    </section>
+    <main id="band" class="text">
+        <div class="container">
+            <h2 class="text__title">The Band</h2>
+            <p class="text__music">We love music!</p>
+            <p class="text__long">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br />
+            <div class="text__images">
+                <div class="text__image__container">
+                    <h3 class="text__image__title">Name</h3>
+                    <br />
+                    <a href="#demo" class="text__image__link" id="band--1">
+                        <img class="text__image" src="./img/bandmember.jpg" alt="member of the band" height="255" width="255">
+                    </a>
+                    <div class="text__details text__details--1">
+                        <p class="text__long">Guitarist and Lead Vocalist</p>
+                        <p class="text__long">Loves long walks on the beach</p>
+                        <p class="text__long">Member since 1988</p>
+                    </div>
+                </div>
+                <div class="text__image__container">
+                    <h3 class="text__image__title">Name</h3>
+                    <br />
+                    <a href="#demo" class="text__image__link" id="band--2">
+                        <img class="text__image" src="./img/bandmember.jpg" alt="member of the band" height="255" width="255">
+                    </a>
+                    <div class="text__details text__details--2">
+                        <p class="text__long">Drummer</p>
+                        <p class="text__long">Loves drummin'</p>
+                        <p class="text__long">Member since 1988</p>
+                    </div>
+                </div>
+                <div class="text__image__container">
+                    <h3 class="text__image__title">Name</h3>
+                    <br />
+                    <a href="#demo" class="text__image__link" id="band--3">
+                        <img class="text__image" src="./img/bandmember.jpg" alt="member of the band" height="255" width="255">
+                    </a>
+                    <div class="text__details text__details--3">
+                        <p class="text__long">Bass player</p>
+                        <p class="text__long">Loves math</p>
+                        <p class="text__long">Member since 2005</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="tour" class="tour">
+        <div class="container">
+            <h3 class="tour__title">Tour Dates</h3>
+            <p class="tour__text">Lorem ipsum we'll play you some music.<br />Remember to book your tickets!<br/><br/></p>
+            <ul class="tour__list">
+                <li class="tour__list__item">September <span class="sold">Sold Out!</span></li>
+                <li class="tour__list__item">October <span class="sold">Sold Out!</span></li>
+                <li class="tour__list__item">November <span class="badge">3</span></li>
+            </ul>
+            <div class="tour__cards">
+                <div class="tour__card">
+                    <img src="./img/paris.jpg" alt="Paris" width="400" height="300">
+                    <p class="tour__card__title">Paris</p>
+                    <p class="tour__card__text">Friday 27 November 2015</p>
+                    <button class="button button--tour">Buy Tickets</button>
+                </div>
+                <div class="tour__card tour__card--newyork">
+                    <img src="./img/newyork.jpg" alt="New York" width="400" height="300">
+                    <p class="tour__card__title">New York</p>
+                    <p class="tour__card__text">Saturday 28 November 2015</p>
+                    <button class="button button--tour">Buy Tickets</button>
+                </div>
+                <div class="tour__card">
+                    <img src="./img/sanfran.jpg" alt="San Francisco" width="400" height="300">
+                    <p class="tour__card__title">San Francisco</p>
+                    <p class="tour__card__text">Sunday 29 November 2015</p>
+                    <button class="button button--tour">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact__form">
+                <h3 class="contact__title">Contact</h3>
+                <p class="contact__text">We love our fans!</p>
+                <div class="contact__form__container">
+                    <div class="contact__form__text">
+                        <p>Fan? Drop a note.</p>
+                        <p>Chicago, US</p>
+                        <p>Phone: +00 1515151515</p>
+                        <p>Email: mail@mail.com</p>
+                    </div>
+                    <div class="contact__form__data">
+                        <div class="namemail">
+                            <input class="input input--name" id="name" name="name" placeholder="Name" type="text" required="">
+                            <input class="input input--mail" id="email" name="email" placeholder="Email" type="text" required="">
+                        </div>
+                        <textarea class="form__comment" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                        <br />
+                        <button class="button button--contact">Send</button>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="contact__blog">
+                <h3 class="contact__title">From The Blog</h3>
+                <ul class="contact__people">
+                    <li class="contact__person contact__person--active"><a>Mike</a></li>
+                    <li class="contact__person"><a>Chandler</a></li>
+                    <li class="contact__person"><a>Peter</a></li>
+                </ul>
+                <div class="person__content">
+                    <div class="person person--active person--1">
+                        <h2 class="person__name">Mike Ross, Manager</h2>
+                        <p class="person__comment">Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
+                    </div>
+                    <div class="person">
+                        <h2 class="person__name">Chandler Bing, Guitarist</h2>
+                        <p class="person__comment">Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+                    </div>
+                    <div class="person">
+                        <h2 class="person__name">Peter Griffin, Bass player</h2>
+                        <p class="person__comment">I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <img src="./img/map.jpg" alt="map of the city">
+    </section>
+    <footer>
+        <a class="footer__button" href="#"><i class="gg-chevron-up"></i></a>
+        <br />
+        <p class="footer_text">Bootstrap theme made by <a href="https://www.w3schools.com/">www.w3schools.com</a></p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

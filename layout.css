@@ -1,0 +1,55 @@
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+}
+
+section {
+  width: 100%;
+}
+
+.container {
+  padding: 80px 120px;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.button, .button:active {
+    background-image: none;
+    outline: 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+    border: 1px solid #333;
+    font-size: 14px;
+    line-height: 1.42857143;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.button:hover, .button:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+}
+
+.button--tour {
+  text-align: center;
+}
+
+.button--contact {
+  float: right;
+}

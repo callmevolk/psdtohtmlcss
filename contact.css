@@ -1,0 +1,175 @@
+.contact__title {
+    text-align: center;
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;
+    font-size: 20px;
+    color: #111;
+    font-weight: 500;
+}
+
+.contact__text {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact__form__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact__form__text {
+    flex: 1;
+    padding: 0 15px 0 0;
+}
+
+.contact__form__text p {
+    margin-bottom: 10px;
+}
+
+.contact__form__data {
+    flex: 2;
+    padding: 0 0 0 15px;
+    clear: both;
+}
+
+.namemail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input, .form__comment {
+    width: 50%;
+    padding: 6px 12px;
+    display: block;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.input:focus, .form__comment:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+*::placeholder {
+    color:#999;
+}
+.input {
+    height: 34px;
+}
+.input--name {
+    margin-right: 15px;
+}
+
+.input--mail {
+    margin-left: 15px;
+}
+
+.form__comment {
+    width: 100%;
+    height: auto;
+    resize: none;
+}
+
+.contact__people {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact__person {
+    margin-right: 2px;
+}
+
+.contact__person a {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+}
+
+.contact__person a:hover {
+    background-color: #eee;
+    border-radius: 4px 4px 0 0;
+    border-color: #eee #eee #ddd;
+    cursor: pointer;
+}
+
+.contact__person--active a {
+    border: 1px solid #ddd;
+    border-bottom-color: #fff;
+    border-radius: 4px 4px 0 0;
+}
+
+.contact__person--active a:hover {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    border: 1px solid #ddd;
+    border-bottom-color: #fff;
+    border-radius: 4px 4px 0 0;
+    cursor: default;
+}
+
+.person {
+    display: none;
+}
+
+.person__name {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.person--active {
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact__form__data {
+        padding: 0;
+    }
+
+    .contact__form__container {
+        flex-direction: column;
+    }
+
+    .namemail {
+        flex-direction: column;
+    }
+
+    .namemail input {
+        margin: 0;
+        flex: 1;
+        width: 100%;
+    }
+
+    .namemail .input--name {
+        margin-bottom: 15px;
+    }
+
+    .contact__title {
+        line-height: 1.1;
+    }
+
+    .contact__people {
+        /* padding-bottom: 1px; */
+        /* flex-direction: column; */
+    }
+}
